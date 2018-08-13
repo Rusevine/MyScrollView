@@ -13,6 +13,7 @@
 		46D03C932121D5CF00F09E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D03C922121D5CF00F09E2B /* Assets.xcassets */; };
 		46D03C962121D5CF00F09E2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D03C942121D5CF00F09E2B /* LaunchScreen.storyboard */; };
 		46D03C992121D5CF00F09E2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D03C982121D5CF00F09E2B /* main.m */; };
+		46D03CA12121DDB500F09E2B /* MyScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46D03CA02121DDB500F09E2B /* MyScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		46D03C952121D5CF00F09E2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46D03C972121D5CF00F09E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46D03C982121D5CF00F09E2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46D03C9F2121DDB500F09E2B /* MyScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScrollView.h; sourceTree = "<group>"; };
+		46D03CA02121DDB500F09E2B /* MyScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				46D03C8A2121D5CC00F09E2B /* AppDelegate.m */,
 				46D03C8C2121D5CD00F09E2B /* ViewController.h */,
 				46D03C8D2121D5CD00F09E2B /* ViewController.m */,
+				46D03C9F2121DDB500F09E2B /* MyScrollView.h */,
+				46D03CA02121DDB500F09E2B /* MyScrollView.m */,
 				46D03C8F2121D5CD00F09E2B /* Main.storyboard */,
 				46D03C922121D5CF00F09E2B /* Assets.xcassets */,
 				46D03C942121D5CF00F09E2B /* LaunchScreen.storyboard */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46D03C8E2121D5CD00F09E2B /* ViewController.m in Sources */,
+				46D03CA12121DDB500F09E2B /* MyScrollView.m in Sources */,
 				46D03C992121D5CF00F09E2B /* main.m in Sources */,
 				46D03C8B2121D5CC00F09E2B /* AppDelegate.m in Sources */,
 			);

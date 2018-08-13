@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MyScrollView.h"
 
 @interface ViewController ()
 
-@property (nonatomic,weak) UIView *innerView;
+@property (nonatomic,weak) MyScrollView *innerView;
 
 
 @end
@@ -22,6 +23,10 @@
     [self setupUI];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+//    [self.view setBounds:CGRectMake(self.view.bounds.origin.x, self.view.bounds.origin.y+100, self.view.bounds.size.width, self.view.bounds.size.height)];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -29,9 +34,11 @@
 }
 
 -(void)setupUI{
-    UIView *innerView = [[UIView alloc] init];
+    MyScrollView *innerView = [[MyScrollView alloc] init];
+    innerView.contentSize = self.view.bounds.size;
     [self.view addSubview:innerView];
     self.innerView = innerView;
+    innerView.backgroundColor = [UIColor lightGrayColor];
     self.innerView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.innerView.heightAnchor constraintEqualToAnchor:self.view.heightAnchor].active = YES;
     [self.innerView.widthAnchor constraintEqualToAnchor:self.view.widthAnchor].active = YES;
