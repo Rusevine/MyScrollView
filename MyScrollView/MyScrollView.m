@@ -21,7 +21,10 @@
 }
 
 -(void)panUsed:(UIPanGestureRecognizer *)sender{
-    CGPoint translation = [sender translationInView:self];
+   CGPoint translation = [sender translationInView:self];
+    CGPoint currentLoc = [sender locationInView:self];
+//    CGFloat limitTop = 0;
+//    CGFloat limitBottom = 800;
     
   
     switch(sender.state){
@@ -30,11 +33,10 @@
             NSLog(@"%.2f",self.bounds.origin.y);
             break;
         case UIGestureRecognizerStateChanged:
-            [self setBounds:CGRectMake(self.bounds.origin.x,(self.bounds.origin.y + translation.y), self.contentSize.width, self.contentSize.height)];
-            //            if(self.bounds.origin.y >= self.contentSize.height || self.bounds.origin.y == 0){
-//                [self setBounds:CGRectMake(self.bounds.origin.x,(self.bounds.origin.y - translation.y), self.contentSize.width, self.contentSize.height)];
-//            NSLog(@"%.2f",self.bounds.origin.y);
-//            }
+      //      translation = [sender translationInView:self];
+          //  [self setBounds:CGRectMake(self.bounds.origin.x,(self.bounds.origin.y + [sender translationInView:self].y), self.contentSize.width, self.contentSize.height)];
+            NSLog(@"Location: %.2f,%.2f translation: %.2f,%.2f",currentLoc.x,currentLoc.y,translation.x,translation.y);
+            
             break;
         case UIGestureRecognizerStateEnded:
             NSLog(@"Ended");

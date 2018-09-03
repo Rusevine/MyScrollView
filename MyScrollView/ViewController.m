@@ -35,7 +35,7 @@
 
 -(void)setupUI{
     MyScrollView *innerView = [[MyScrollView alloc] init];
-    innerView.contentSize = self.view.bounds.size;
+    innerView.contentSize = CGSizeMake(self.view.bounds.size.width, 800);
     [self.view addSubview:innerView];
     self.innerView = innerView;
     innerView.backgroundColor = [UIColor lightGrayColor];
